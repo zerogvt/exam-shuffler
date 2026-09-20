@@ -171,6 +171,33 @@ produces papers that pass the same checks when driven in headless Chromium; and
 the papers from that browser run carry no author, company or template path,
 with the browser's own log clean of CSP refusals.
 
+### Driving the built page in a real browser
+
+jsdom is not a browser, and the two worst bugs of this project's first days
+were invisible to it.  There is no Playwright here and no need for one:
+Chromium speaks the DevTools protocol, and Node has a `WebSocket` global.
+
+```bash
+(cd dist && python3 -m http.server 4173 &)          # or the live URL
+chromium --headless=new --disable-gpu --no-sandbox \
+         --remote-debugging-port=9333 --user-data-dir=/tmp/chk &
+```
+
+Then, from Node: `fetch('http://127.0.0.1:9333/json/list')` for the page's
+`webSocketDebuggerUrl`, open a `WebSocket` to it, and send `{id, method,
+params}` frames -- `Page.navigate`, `Runtime.evaluate` (with `awaitPromise`
+and `returnByValue`), `Log.enable` to catch CSP refusals, `Page.captureScreenshot`
+with a clip from `DOM.getBoxModel`, `Emulation.setEmulatedMedia` for dark mode,
+`Page.addScriptToEvaluateOnNewDocument` to wrap `URL.createObjectURL` and get
+the produced ZIP back out of the page.  A file can be handed to the page for
+real by building a `File` from base64 bytes in `Runtime.evaluate`, putting it
+in a `DataTransfer`, and dispatching `change` on `#file`.
+
+Two things to know: the snap Chromium writes downloads inside its own private
+`/tmp`, so read the archive out of the page rather than off the disk; and
+`pkill -f` patterns match the killing command's own line, so kill by pid or by
+a pattern the command itself does not contain.
+
 **Nobody has opened a testmessj paper in Word yet.** The package writer is new
 code. If a change touches how the archive or the document part is written, the
 structural checks are necessary but not sufficient — open one of the results in
