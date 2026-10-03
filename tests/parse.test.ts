@@ -3,7 +3,7 @@ import { beforeAll, describe, expect, it } from 'vitest';
 
 import {
   ExamError, parseExam, validateExam, writeZip, zipEntry, type Exam,
-} from '../src/testmess';
+} from '../src/exam-shuffler';
 import { parseXml, serialize } from '../src/xml';
 import { FIXTURES, SOURCE, countMath, sampleBytes } from './helpers';
 

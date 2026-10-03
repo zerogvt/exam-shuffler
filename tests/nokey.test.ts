@@ -15,7 +15,7 @@ import { describe, expect, it } from 'vitest';
 import {
   generatePapers, keyLine, makeVariants, parseExam, readZip, variantNames,
   writeVariant, writeZip,
-} from '../src/testmess';
+} from '../src/exam-shuffler';
 import { KEY_HEADING } from '../src/markers';
 import { NOKEY, SOURCE, documentRoot, countMath, mathSignature, paragraphTexts, sampleBytes } from './helpers';
 

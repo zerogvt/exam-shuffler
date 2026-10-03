@@ -5,7 +5,7 @@
 
 import { describe, expect, it } from 'vitest';
 
-import { KEY_ENTRY, KEY_HEADING, OPTION_LABEL, QUESTION_LABEL, sameMarker } from '../src/testmess';
+import { KEY_ENTRY, KEY_HEADING, OPTION_LABEL, QUESTION_LABEL, sameMarker } from '../src/exam-shuffler';
 
 describe('option markers', () => {
   it.each([

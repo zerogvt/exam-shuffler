@@ -114,7 +114,7 @@ describe('the licence', () => {
     // there: a test that spells out the name it is guarding against would put
     // that name straight back into the repository it is meant to keep it out
     // of.
-    expect(licence).toMatch(/^Copyright \(c\) \d{4} the testmessj authors$/m);
+    expect(licence).toMatch(/^Copyright \(c\) \d{4} the exam-shuffler authors$/m);
   });
 });
 

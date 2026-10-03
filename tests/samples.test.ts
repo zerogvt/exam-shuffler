@@ -10,7 +10,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 
-import { parseExam } from '../src/testmess';
+import { parseExam } from '../src/exam-shuffler';
 import { FIXTURES, NOKEY, sampleBytes } from './helpers';
 
 const OFFERED = [...FIXTURES.map((fixture) => fixture.file), NOKEY];

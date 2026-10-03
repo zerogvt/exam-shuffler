@@ -12,7 +12,7 @@ import { describe, expect, it } from 'vitest';
 
 import {
   AppError, ExamError, LANGS, STRINGS, detectLanguage, format, parseExam, t,
-} from '../src/testmess';
+} from '../src/exam-shuffler';
 import { SOURCE, sampleBytes } from './helpers';
 
 const read = (name: string) => readFileSync(join(process.cwd(), name), 'utf-8');
@@ -208,7 +208,7 @@ describe('a test with no answer key', () => {
 
 describe('the one line this program writes into a paper', () => {
   it('is in the language the papers were built in', async () => {
-    const { generatePapers: generate } = await import('../src/testmess');
+    const { generatePapers: generate } = await import('../src/exam-shuffler');
     const { documentRoot, paragraphTexts } = await import('./helpers');
 
     for (const [lang, pattern] of [
@@ -225,7 +225,7 @@ describe('the one line this program writes into a paper', () => {
 
   it('is the only thing the language changes about a paper', async () => {
     // The teacher's own document must not depend on which flag is showing.
-    const { generatePapers: generate } = await import('../src/testmess');
+    const { generatePapers: generate } = await import('../src/exam-shuffler');
     const english = await generate(sampleBytes(SOURCE), SOURCE,
       { count: 1, seed: 3, lang: 'en' });
     const greek = await generate(sampleBytes(SOURCE), SOURCE,

@@ -1,5 +1,5 @@
 <!-- feature: exam-variants -->
-# testmessj
+# exam-shuffler
 
 Turn one multiple-choice test in Word into any number of shuffled variants,
 each written twice: a student copy (questions + options) and a professor copy
@@ -37,7 +37,7 @@ that has to be acknowledged on every visit.
 
 ## TL;DR — for the teacher
 
-**1. Open the page:** <https://zerogvt.github.io/testmessj/>
+**1. Open the page:** <https://zerogvt.github.io/exam-shuffler/>
 
 The page speaks English and Greek. It opens in whichever your browser asks for
 and the two flags at the top switch between them; `?lang=el` on the end of the
@@ -234,7 +234,7 @@ your_test.docx (read in the tab, never uploaded)
 | `src/metadata.ts` | taking the names out of a package, and warning about what stays |
 | `src/variants.ts` | the shuffle, and the seeded generator behind it |
 | `src/render.ts` | rebuilding `word/document.xml`, writing the packages |
-| `src/testmess.ts` | the whole pipeline in one call, plus the public exports |
+| `src/exam-shuffler.ts` | the whole pipeline in one call, plus the public exports |
 | `src/main.ts` | the page: file in, ZIP out |
 | `tests/` | 308 tests, `vitest` |
 | `samples/*.docx` | three sample tests — Latin-lettered, Greek-lettered, and Greek with no answer key; also the page's static directory, so they are served for download under their own names |
@@ -443,12 +443,12 @@ on every push to `main`; the test suite is the gate. Enable it once, by hand:
 **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
 The build uses a relative base (`base: './'`), so the same `dist/` works at
-`https://<user>.github.io/testmessj/`, at a custom domain, or opened from a
+`https://<user>.github.io/exam-shuffler/`, at a custom domain, or opened from a
 local web server.
 
 ## Licence
 
-[MIT](LICENSE). The copyright line reads "the testmessj authors" rather than a
+[MIT](LICENSE). The copyright line reads "the exam-shuffler authors" rather than a
 name, to match the samples, which carry none either.
 
 ## Verification

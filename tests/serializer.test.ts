@@ -8,7 +8,7 @@
 
 import { afterEach, describe, expect, it } from 'vitest';
 
-import { makeVariants, parseExam, renderDocumentXml } from '../src/testmess';
+import { makeVariants, parseExam, renderDocumentXml } from '../src/exam-shuffler';
 import { SOURCE, sampleBytes } from './helpers';
 
 const native = globalThis.XMLSerializer;

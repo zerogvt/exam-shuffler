@@ -10,7 +10,7 @@ import { describe, expect, it } from 'vitest';
 import {
   carriedOverWarnings, generatePapers, metadataNames, parseExam, readZip,
   scrubMetadata, zipEntry, type ZipEntry,
-} from '../src/testmess';
+} from '../src/exam-shuffler';
 import { SOURCE, sampleBytes } from './helpers';
 
 const decode = (entry: ZipEntry) => new TextDecoder().decode(entry.data);

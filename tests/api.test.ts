@@ -7,7 +7,7 @@
 
 import { describe, expect, it } from 'vitest';
 
-import { bundlePapers, generatePapers, keyLine, readZip } from '../src/testmess';
+import { bundlePapers, generatePapers, keyLine, readZip } from '../src/exam-shuffler';
 import { SOURCE, sampleBytes } from './helpers';
 
 describe('generatePapers', () => {

@@ -14,8 +14,8 @@
 
 import {
   bundlePapers, carriedOverWarnings, generatePapers, parseExam, seedFrom,
-} from './testmess';
-import type { Exam, Paper, Variant } from './testmess';
+} from './exam-shuffler';
+import type { Exam, Paper, Variant } from './exam-shuffler';
 import { AppError } from './errors';
 import { DEFAULT_LANG, LANGS, detectLanguage, t, type Lang, type Params } from './i18n';
 

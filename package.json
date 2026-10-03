@@ -1,5 +1,5 @@
 {
-  "name": "testmessj",
+  "name": "exam-shuffler",
   "version": "0.1.0",
   "private": true,
   "description": "Shuffled variants of a multiple-choice Word test, built in the browser",

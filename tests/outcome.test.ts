@@ -11,7 +11,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 
-import { LANGS, STRINGS } from '../src/testmess';
+import { LANGS, STRINGS } from '../src/exam-shuffler';
 
 const read = (name: string) => readFileSync(join(process.cwd(), name), 'utf-8');
 const html = read('index.html').replace(/<!--[\s\S]*?-->/g, '');

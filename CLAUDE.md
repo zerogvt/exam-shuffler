@@ -1,16 +1,16 @@
 # CLAUDE.md
 
-Context for working on **testmessj**, beyond what the code and README already
+Context for working on **exam-shuffler**, beyond what the code and README already
 show. Read `README.md` first for how the program is put together; this file is
 only the things that are easy to break without knowing them.
 
-testmessj is the TypeScript port of
+exam-shuffler (formerly testmessj) is the TypeScript port of
 [testmess](https://github.com/zerogvt/testmess) — same job, same invariants,
 running in a browser tab instead of a terminal. When something here is
 surprising, the Python original usually explains why.
 
-Feature tag for new files here: `feature: exam-variants` (the tag predates both
-renames — keep it, do not "fix" it).
+Feature tag for new files here: `feature: exam-variants` (the tag predates every
+rename — keep it, do not "fix" it).
 
 ## The invariants
 
@@ -99,7 +99,7 @@ change, not in the test.
   of `src/` imports that reach the page.
 - 2-space indentation, in the TypeScript too. Comments say *why*, not *what*.
 - Tests are `vitest`, run with `npm test`. They live in `tests/` and import
-  through `src/testmess.ts` where they can.
+  through `src/exam-shuffler.ts` where they can.
 - Do not hard-code facts about `samples/*.docx` into tests — the sample
   documents get re-exported and the numbers move (the equation count already
   changed 30 → 31 once). Derive them from the source document at test time.
@@ -198,7 +198,7 @@ Two things to know: the snap Chromium writes downloads inside its own private
 `pkill -f` patterns match the killing command's own line, so kill by pid or by
 a pattern the command itself does not contain.
 
-**Nobody has opened a testmessj paper in Word yet.** The package writer is new
+**Nobody has opened an exam-shuffler paper in Word yet.** The package writer is new
 code. If a change touches how the archive or the document part is written, the
 structural checks are necessary but not sufficient — open one of the results in
 Word before claiming it renders.
