@@ -20,7 +20,7 @@ export const DEFAULT_LANG: Lang = 'en';
 
 const EN: Record<string, string> = {
   // -- page -------------------------------------------------------------
-  'page.title': 'testmess — shuffled exam variants',
+  'page.title': 'exam-shuffler — shuffled exam variants',
   'page.description':
     'Turn one multiple-choice test in Word into any number of shuffled variants, '
     + 'student copy and professor copy. Runs entirely in your browser.',
@@ -36,7 +36,7 @@ const EN: Record<string, string> = {
   // -- the notice --------------------------------------------------------
   'notice.title': 'Before you use this tool',
   'notice.warranty':
-    'testmess is provided free of charge, “as is” and “as available”, without '
+    'exam-shuffler is provided free of charge, “as is” and “as available”, without '
     + 'warranty of any kind.',
   'notice.warranty.detail':
     'That includes, without limitation, any express or implied warranty of '
@@ -211,7 +211,7 @@ const EN: Record<string, string> = {
 
 const EL: Record<string, string> = {
   // -- page -------------------------------------------------------------
-  'page.title': 'testmess — παραλλαγές διαγωνίσματος',
+  'page.title': 'exam-shuffler — παραλλαγές διαγωνίσματος',
   'page.description':
     'Μετατρέψτε ένα διαγώνισμα πολλαπλής επιλογής σε Word σε όσες παραλλαγές '
     + 'θέλετε, με αντίτυπο μαθητή και αντίτυπο καθηγητή. Εκτελείται εξ ολοκλήρου '
@@ -228,7 +228,7 @@ const EL: Record<string, string> = {
   // -- the notice --------------------------------------------------------
   'notice.title': 'Πριν χρησιμοποιήσετε αυτό το εργαλείο',
   'notice.warranty':
-    'Το testmess διατίθεται δωρεάν, «ως έχει» και «ως είναι διαθέσιμο», χωρίς '
+    'Το exam-shuffler διατίθεται δωρεάν, «ως έχει» και «ως είναι διαθέσιμο», χωρίς '
     + 'καμία απολύτως εγγύηση.',
   'notice.warranty.detail':
     'Αυτό περιλαμβάνει, ενδεικτικά και όχι περιοριστικά, κάθε ρητή ή σιωπηρή '

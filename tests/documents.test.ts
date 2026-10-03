@@ -8,7 +8,7 @@ import { beforeAll, describe, expect, it } from 'vitest';
 import {
   KEY_ENTRY, KEY_HEADING, OPTION_LABEL, QUESTION_LABEL, makeVariants, parseExam,
   readZip, writeVariant, type Exam, type Paper, type Variant,
-} from '../src/testmess';
+} from '../src/exam-shuffler';
 import { NS } from '../src/xml';
 import {
   SOURCE, bodyParagraphs, countMath, documentRoot, documentText, keyEntries,

@@ -7,7 +7,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import {
   KEY_ENTRY, KEY_HEADING, OPTION_LABEL, QUESTION_LABEL, readZip,
-} from '../src/testmess';
+} from '../src/exam-shuffler';
 import { DOCUMENT_PART } from '../src/parse';
 import { NS, isTag, paragraphText, parseXml } from '../src/xml';
 

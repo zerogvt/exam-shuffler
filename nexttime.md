@@ -1,4 +1,4 @@
-# Where things stand — testmessj
+# Where things stand — exam-shuffler
 
 Resume by starting Claude in `/home/v/git-linux/testmessj` and saying *"read
 nexttime.md"*. `CLAUDE.md` holds the invariants and the traps; this file holds
@@ -8,12 +8,12 @@ Written 2026-09-20, at commit `c3a28dc`.
 
 ## What this is
 
-`testmessj` is a browser rewrite of the Python `testmess`: one multiple-choice
+`exam-shuffler` (formerly `testmessj`) is a browser rewrite of the Python `testmess`: one multiple-choice
 test in Word goes in, any number of shuffled variants come out, each written as
 a student copy and — where the source has an answer key — a professor copy.
 Everything happens in the tab; nothing is uploaded.
 
-- Live: <https://zerogvt.github.io/testmessj/> (GitHub Pages, deployed by
+- Live: <https://zerogvt.github.io/exam-shuffler/> (GitHub Pages, deployed by
   `.github/workflows/deploy.yml` on push to `main`, with `npm test` as the gate)
 - Local: `/home/v/git-linux/testmessj`, `main` in sync with origin
 - The Python original: `/home/v/git-linux/testmess` (untouched except for one

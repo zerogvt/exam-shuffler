@@ -13,7 +13,7 @@ import { describe, expect, it } from 'vitest';
 import {
   generatePapers, makeVariants, parseExam, readZip, sameMarker, writeZip,
   type Paper,
-} from '../src/testmess';
+} from '../src/exam-shuffler';
 import { KEY_HEADING } from '../src/markers';
 import { paragraphText } from '../src/xml';
 import {

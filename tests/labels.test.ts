@@ -7,7 +7,7 @@
 
 import { describe, expect, it } from 'vitest';
 
-import { OPTION_LABEL, QUESTION_LABEL } from '../src/testmess';
+import { OPTION_LABEL, QUESTION_LABEL } from '../src/exam-shuffler';
 import { NS, paragraphText, parseXml, relabel, textRuns } from '../src/xml';
 
 function paragraph(...runs: string[]): Element {

@@ -6,7 +6,7 @@
 
 import { describe, expect, it } from 'vitest';
 
-import { AppError, readZip, writeZip, zipEntry } from '../src/testmess';
+import { AppError, readZip, writeZip, zipEntry } from '../src/exam-shuffler';
 import { DEFLATED, STORED, crc32 } from '../src/zip';
 import { SOURCE, sampleBytes } from './helpers';
 

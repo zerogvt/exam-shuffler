@@ -1,7 +1,7 @@
 // feature: exam-variants
 import { beforeAll, describe, expect, it } from 'vitest';
 
-import { Rng, makeVariants, parseExam, seedFrom, type Exam, type Variant } from '../src/testmess';
+import { Rng, makeVariants, parseExam, seedFrom, type Exam, type Variant } from '../src/exam-shuffler';
 import { SOURCE, sampleBytes } from './helpers';
 
 /** Everything a shuffle may change, flattened so two runs can be compared. */

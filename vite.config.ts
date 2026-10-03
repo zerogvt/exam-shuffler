@@ -3,7 +3,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  // Relative, so the built page works from https://<user>.github.io/testmessj/
+  // Relative, so the built page works from https://<user>.github.io/exam-shuffler/
   // as happily as it does from a file opened locally.
   base: './',
   // samples/ is the static directory, so both sample tests are copied to the
